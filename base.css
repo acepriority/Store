@@ -185,6 +185,34 @@ body.dark {
         display: block;
         width: auto;
     }
+
+    .SideBar-Switcher {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .SideBar-Switcher::after {
+        content: attr(data-hint);
+        position: absolute;
+        top: 50%;
+        left: 110%;
+        transform: translateY(-50%);
+        background-color: rgba(218, 218, 218, 0.725);
+        color: rgb(69, 69, 69);
+        padding: 5px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+        z-index: 10;
+    }
+    
+    .SideBar-Switcher:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
     
     .App {
         height: 100%;
