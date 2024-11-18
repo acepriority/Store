@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="App-Switcher-Container">
-                    <div role="button" tabindex="0" data-hint="Home"  class="SideBar-Switcher">
+                    <div role="button" tabindex="0" data-hint="Home" class="SideBar-Switcher" data-template="home.html">
                         <a href="#" class="Switch-Link">
                             <div class="Link-Icon">
                                 <div role="img">
@@ -56,7 +56,7 @@
                             <div class="Link-Name"><div>Dashboard</div></div>
                         </a>
                     </div>
-                    <div role="button" tabindex="0" data-hint="Inventory" class="SideBar-Switcher">
+                    <div role="button" tabindex="0" data-hint="Inventory" class="SideBar-Switcher" data-template="inventory.html">
                         <a href="#" class="Switch-Link">
                             <div class="Link-Icon">
                                 <div role="img">
@@ -76,7 +76,7 @@
                             <div class="Link-Name"><div>Orders</div></div>
                         </a>
                     </div>
-                    <div role="button" tabindex="0" data-hint="Settings" class="SideBar-Switcher">
+                    <div role="button" tabindex="0" data-hint="Settings" class="SideBar-Switcher" data-template="settings.html">
                         <a href="#" class="Switch-Link">
                             <div class="Link-Icon">
                                 <div role="img">
@@ -95,10 +95,14 @@
                 <span class="material-symbols-outlined" id="menu-icon" onclick="expandSideBar()">menu</span>
             </header>
             <main>
+                <div class="App-Container">
+                    <!-- Where content is dynamically changed. -->
+                </div>
             </main>
         </div>
     </div>
     
     <script src="sideBar.js"></script>
+    <script src="dynamicLoad.js"></script>
 </body>
 </html>
