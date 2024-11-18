@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="base.css">
+    <title>Base App</title>
+</head>
+<body>
+    <script src="setMediaQuery.js"></script>
+    <script type="application/json" id="theme-data">{"mode":"light"}</script>
+    <script src="setTheme.js"></script>
+    <style id="scroll-properties">
+        * {
+            scrollbar-width: 15px;
+            scrollbar-color: rgba(255, 255, 255, 0.2)  rgba(0, 0, 0, 0);
+        }
+    </style>
+
+    <div class="Base-App">
+        <div class="SideBar-Container" id="SideBar-Container">
+            <div class="SideBar">
+                <div class="sidebar-wrapper">
+                    <div class="Account">
+                        <div role="button" tabindex="0" class="sidebar-switcher">
+                            <div class="record">
+                                <div class="record-icon">
+                                    <div role="img" aria-label="a">
+                                        <div>a</div>
+                                    </div>
+                                </div>
+                                <div class="record-name"><div>ace priority</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="SideBar-Links">
+                        <div role="button" tabindex="0" class="s-links">
+                            <a href="#" class="SideBar-Link">
+                                <div class="SideBar-Link-Icon">
+                                    <div role="img">
+                                        <span class="material-symbols-outlined">home</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-link-name"><div>Home</div></div>
+                            </a>
+                        </div>
+                        <div role="button" tabindex="0" class="s-links">
+                            <a href="#" class="SideBar-Link">
+                                <div class="SideBar-Link-Icon">
+                                    <div role="img">
+                                        <span class="material-symbols-outlined">speed</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-link-name"><div>Dashboard</div></div>
+                            </a>
+                        </div>
+                        <div role="button" tabindex="0" class="s-links">
+                            <a href="#" class="SideBar-Link">
+                                <div class="SideBar-Link-Icon">
+                                    <div role="img">
+                                        <span class="material-symbols-outlined">inventory_2</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-link-name"><div>Inventory</div></div>
+                            </a>
+                        </div>
+                        <div role="button" tabindex="0" class="s-links">
+                            <a href="#" class="SideBar-Link">
+                                <div class="SideBar-Link-Icon">
+                                    <div role="img">
+                                        <span class="material-symbols-outlined">shopping_cart</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-link-name"><div>Orders</div></div>
+                            </a>
+                        </div>
+                        <div role="button" tabindex="0" class="s-links">
+                            <a href="#" class="SideBar-Link">
+                                <div class="SideBar-Link-Icon">
+                                    <div role="img">
+                                        <span class="material-symbols-outlined">settings</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-link-name"><div>Settings</div></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="App">
+            <header>
+                <span class="material-symbols-outlined" id="menu-icon" onclick="expandSideBar()">menu</span>
+            </header>
+            <main>
+            </main>
+        </div>
+    </div>
+    
+    <script src="sideBar.js"></script>
+</body>
+</html>

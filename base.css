@@ -1,0 +1,211 @@
+:root {
+    --body-bgcolor-light: #ffffff;
+    --body-bgcolor-dark: #000000;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--body-bgcolor-light);
+}
+
+body.dark {
+    background-color: var(--body-bgcolor-dark);
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+    .Base-App {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .SideBar-Container {
+        flex: 0 0 3%; /* flex-grow flex-shrink flex-basis */
+        height: 100%;
+        transition: flex-basis 0.2s ease;
+    }
+    
+    .SideBar {
+        width: 100%;
+        height: 100%;
+        color: rgb(155, 155, 155); 
+        font-weight: 500;
+    }
+    
+    .sidebar-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Account div[role="button"] {
+        width: auto;
+        margin: 6px 8px;
+        padding: 2px;
+        border-radius: 4px;
+    }
+    
+    .Account div[role="button"]:hover {
+        background-color: rgba(218, 218, 218, 0.725);
+        color: rgb(69, 69, 69); 
+    }
+    
+    .record {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .record-icon {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .record-icon div[role="img"] {
+        border-radius: 0.25em; 
+        width: 20px; 
+        height: 20px; 
+        background: rgba(8, 8, 8, 0.094); 
+        color: rgba(0, 0, 0, 0.443); 
+        text-transform: uppercase;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .record-icon div[role="img"] > div {
+        line-height: 1; 
+        font-size: 13.431px; 
+        height: 13.431px;
+    }
+    
+    .SideBar-Links {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .SideBar-Links div[role="button"] {
+        width: 100%;
+        }
+    
+    .SideBar-Link {
+        text-decoration: none;
+        color: rgb(155, 155, 155); 
+        display: flex;
+        gap: 1rem;
+        margin: 0px 8px;
+        padding: 2px;
+        border-radius: 4px;
+    }
+    
+    .SideBar-Link:hover {
+        background-color: rgba(218, 218, 218, 0.725);
+        color: rgb(69, 69, 69); 
+    }
+    
+    .SideBar-Link-Icon {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .SideBar-Link-Icon div[role="img"] {
+        border-radius: 0.25em; 
+        width: 20px; 
+        height: 20px; 
+        color: rgba(0, 0, 0, 0.443); 
+        text-transform: uppercase;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .SideBar-Link-Icon div[role="img"] > span {
+        line-height: 1; 
+        font-size: 18px; 
+        height: 18px;
+    }
+    
+    .sidebar-link-name {
+        display: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        transition: width 0.3s ease;
+    }
+    
+    .sidebar-link-name > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .expanded {
+        flex-basis: 15%;
+    }
+    
+    #menu-icon {
+        transition: transform 0.2s ease;
+        cursor: pointer;
+    }
+    
+    .rotate-icon {
+        transform: rotate(90deg);
+    }
+    
+    .record-name {
+        display: none;
+        flex: 1 1 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        transition: width 0.3s ease;
+    }
+    
+    .record-name > div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .display-record-name {
+        display: block;
+        width: 100%;
+    }
+    
+    .display-sidebar-link-name {
+        display: block;
+        width: auto;
+    }
+    
+    .App {
+        height: 100%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    main {
+        flex: 1;
+    }
+}
