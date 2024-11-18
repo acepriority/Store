@@ -36,15 +36,12 @@ body.dark {
     .SideBar {
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
         color: rgb(155, 155, 155); 
         font-weight: 500;
     }
-    
-    .sidebar-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    
+        
     .Account div[role="button"] {
         width: auto;
         margin: 6px 8px;
@@ -57,18 +54,18 @@ body.dark {
         color: rgb(69, 69, 69); 
     }
     
-    .record {
+    .Record {
         display: flex;
         gap: 1rem;
     }
     
-    .record-icon {
+    .Record-Icon {
         display: flex; 
         align-items: center; 
         justify-content: center;
     }
     
-    .record-icon div[role="img"] {
+    .Record-Icon div[role="img"] {
         border-radius: 0.25em; 
         width: 20px; 
         height: 20px; 
@@ -80,23 +77,23 @@ body.dark {
         justify-content: center;
     }
     
-    .record-icon div[role="img"] > div {
+    .Record-Icon div[role="img"] > div {
         line-height: 1; 
         font-size: 13.431px; 
         height: 13.431px;
     }
     
-    .SideBar-Links {
+    .App-Switcher-Container {
         display: flex; 
         flex-direction: column; 
         align-items: center;
     }
     
-    .SideBar-Links div[role="button"] {
+    .App-Switcher-Container div[role="button"] {
         width: 100%;
         }
     
-    .SideBar-Link {
+    .Switch-Link {
         text-decoration: none;
         color: rgb(155, 155, 155); 
         display: flex;
@@ -106,18 +103,18 @@ body.dark {
         border-radius: 4px;
     }
     
-    .SideBar-Link:hover {
+    .Switch-Link:hover {
         background-color: rgba(218, 218, 218, 0.725);
         color: rgb(69, 69, 69); 
     }
     
-    .SideBar-Link-Icon {
+    .Link-Icon {
         display: flex; 
         align-items: center; 
         justify-content: center;
     }
     
-    .SideBar-Link-Icon div[role="img"] {
+    .Link-Icon div[role="img"] {
         border-radius: 0.25em; 
         width: 20px; 
         height: 20px; 
@@ -128,13 +125,13 @@ body.dark {
         justify-content: center;
     }
     
-    .SideBar-Link-Icon div[role="img"] > span {
+    .Link-Icon div[role="img"] > span {
         line-height: 1; 
         font-size: 18px; 
         height: 18px;
     }
     
-    .sidebar-link-name {
+    .Link-Name {
         display: none;
         white-space: nowrap;
         overflow: hidden;
@@ -143,7 +140,7 @@ body.dark {
         transition: width 0.3s ease;
     }
     
-    .sidebar-link-name > div {
+    .Link-Name > div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -153,16 +150,16 @@ body.dark {
         flex-basis: 15%;
     }
     
-    #menu-icon {
+    #menu-Icon {
         transition: transform 0.2s ease;
         cursor: pointer;
     }
     
-    .rotate-icon {
+    .rotate-Icon {
         transform: rotate(90deg);
     }
     
-    .record-name {
+    .Record-Name {
         display: none;
         flex: 1 1 auto;
         white-space: nowrap;
@@ -172,19 +169,19 @@ body.dark {
         transition: width 0.3s ease;
     }
     
-    .record-name > div {
+    .Record-Name > div {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         width: 100%;
     }
     
-    .display-record-name {
+    .Display-Record-Name {
         display: block;
         width: 100%;
     }
     
-    .display-sidebar-link-name {
+    .Display-Link-Name {
         display: block;
         width: auto;
     }
